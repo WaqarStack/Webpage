@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Jasmine 🎉</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf5;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      animation: fadeIn 2s ease-in;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .photo-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .photo-grid img {
+      width: 280px;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease;
+    }
+
+    .photo-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .journey {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .moment {
+      margin-bottom: 50px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+
+    .moment.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .moment h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #444;
+    }
+
+    .moment p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+      color: #666;
+    }
+
+    .moment img, .moment video {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 20px;
+      scroll-snap-type: x mandatory;
+    }
+
+    .slider::-webkit-scrollbar {
+      display: none;
+    }
+
+    .slider-item {
+      flex: 0 0 auto;
+      scroll-snap-align: center;
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .slider-item:hover {
+      transform: scale(1.05);
+    }
+
+    .slider-item img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .slider-item p {
+      padding: 10px;
+      font-size: 0.9rem;
+      background-color: #fff;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .message {
+      background-color: #fce4ec;
+      padding: 60px 20px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .message h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .message p {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #444;
+    }
+
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2rem; }
+      .photo-grid img, .slider-item { width: 90%; height: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Happy Birthday Jasmine 🎉</h1>
+    <p>A small page to celebrate you</p>
+    <div class="photo-grid">
+      <img src="images/IMG-20250916-WA0008.jpg" alt="Aesthetic 1" />
+      <img src="images/IMG-20250916-WA0009.jpg" alt="Aesthetic 2" />
+      <img src="images/IMG-20250916-WA0010.jpg" alt="Aesthetic 3" />
+      <img src="images/IMG-20250916-WA0011.jpg" alt="Aesthetic 4" />
+      <img src="images/IMG-20250916-WA0013.jpg" alt="Aesthetic 5" />
+    </div>
+  </header>
+
+  <section>
+    <h2>Our Journey</h2>
+    <div class="journey">
+      <div class="moment">
+        <h3>December 2023 — Jiowonderland</h3>
+        <p>“Where it started.”</p>
+        <img src="images2/IMG-20250916-WA0009.jpg" alt="Jiowonderland" />
+        <video src="Videos/1758106507128304.mp4" controls></video>
+      </div>
+      <div class="moment">
+        <h3>September 2024 — Birthday Surprise</h3>
+        <p>“The watch, the smile.”</p>
+        <img src="images2/IMG_4568.JPG" alt="Birthday Surprise" />
+        <video src="Videos/1758109097995352.mp4" controls></video>
+      </div>
+       <div class="moment">
+        <h3>September 30, 2024 — Marine Lines Night Out</h3>
+        <p>“Quiet moments under the lights.”</p>
+        <p>Some memories were never photographed. This one was reborn through pixels and feeling</p>
+        <img src="images2/unnamed.png" alt="Marine Lines" />
+      </div>
+      <div class="moment">
+        <h3>May 2025 — Bangalore Trip</h3>
+        <p>“Massages, laughter, late nights.”</p>
+        <img src="images2/IMG_8521.JPG" alt="Bangalore Trip" />
+        <video src="Videos/1758107148656184.mp4" controls></video>
+      </div>
+     
+      <div class="moment">
+        <h3>August 2025 — Our Small Dance,Late night walk,Trek</h3>
+        <p>“Just a few steps. But it meant everything.”</p>
+        <img src="images2/IMG_0367.JPG" alt="Our Small Dance" />
+        <video src="Videos/1758113559554371.mp4" controls></video>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>A Few of My Favourite Moments</h2>
+    <div class="slider">
+      <div class="slider-item">
+        <img src="images2/IMG_3806.JPG" alt="That smile" />
+        <p>That smile</p>
+      </div>
+      <div class="slider-item">
+        <img src="images2/IMG_8422.JPG" alt="Library Light" />
+        <p>That Library Light</p>
+      </div>
+      <div class="slider-item">
+        <img src="images2/IMG_3238.JPG" alt="That laugh" />
+        <p>That laugh</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="message">
+    <h2>My Wish for You</h2>
+    <p>Happy Birthday 🎉 From spontaneous cafe runs and Bandra shopping to our long scooter rides,
+       late-night talks, small fights, gifts and those quiet moments.
+       Every bit of it has been part of our journey.
+        I hope this next chapter brings you calm, good health and steady happiness. 
+        May Allah guide you, protect you from anything haram ,big or small and fill your path with what’s pure and good.
+    </p>
+  </section>
+
+  <footer>
+    <p>Built quietly with ❤️, just to say happy birthday.</p>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('.moment').forEach(m => {
+        const rect = m.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          m.classList.add('visible');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
